@@ -8,21 +8,31 @@ body {
   color: #222;
   font-size: 24px; 
   font-family: sans-serif;
+  /* justify-content: space-between; */
+  /* display: flex; */
 }
 
 h1 {
   margin: 30px;
 }
 
-.languages {
+.header {
+  background-color: goldenrod;
+}
+
+.footer {
+  background-color: burlywood;
+}
+
+/* .languages {
   height: 400px;
   width: 400px;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
-}
+} */
 
-.language {
+/* .language {
   flex: 1;
   display: flex;
   justify-content: space-between;
@@ -31,20 +41,20 @@ h1 {
   background-color: blanchedalmond;
   border: 1px solid #222;
   margin: 2px;
-}
+} */
 
-.voteCount {
+/* .voteCount {
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.language button {
+/* .language button {
   color: green;
   background-color: #0000;
   border: none;
   font-size: 30px;
   outline: none;
   cursor: pointer;
-}
+} */

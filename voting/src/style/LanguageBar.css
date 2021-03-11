@@ -1,0 +1,24 @@
+.languageBar {
+    background-color: orange;
+    margin: 1em auto;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    max-width: 600px;
+    min-width: 400px;
+}
+
+.favCount, .language, .upVote {
+    padding: 5px 0;
+}
+
+.upVoteButton {
+    font-size: 1rem;
+    color: orange;
+    background-color: black;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
