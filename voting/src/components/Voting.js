@@ -14,7 +14,10 @@ class Voting extends Component{
 			totalFavCount: 0,
 			lastVote: "none"
 		}
-		this.languages.forEach( (value) => this.state.favCount[value] = 0)
+		this.languages.forEach( (lang) => {
+			this.state.favCount[lang] = 0;
+			this.state.totalFavCount += this.state.favCount[lang];
+		})
 	}
 
 	incrementTotalFavCounter = () => {
