@@ -12,12 +12,10 @@ class LanguageBar extends Component {
         }
     }
 
-    incrementFavCount = () => {
-        return this.state.favCount += 1
-    }
-
     upVote = (event) => {
-        this.setState({favCount: this.incrementFavCount()})
+        this.setState({favCount: this.state.favCount + 1});
+        this.props.lastVote(this.state.language);
+        this.props.totalCount();
     }
 
     render() {
