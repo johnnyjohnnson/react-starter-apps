@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './style/App.css';
 import Voting from './components/Voting';
 import Header from './components/Header';

@@ -15,8 +15,8 @@ class Voting extends Component{
 			lastVote: "none"
 		}
 		this.languages.forEach( (lang) => {
-			this.state.favCount[lang] = 0;
-			this.state.totalFavCount += this.state.favCount[lang];
+			this.setState({favCount: Object.assign(this.state.favCount, {[lang]: 0})});
+			this.setState({totalFavCount: this.state.totalFavCount + this.state.favCount[lang]});
 		})
 	}
 
@@ -42,7 +42,7 @@ class Voting extends Component{
 				</div>
 				<div className="languageContainer">
 					{
-						this.languages.map( item => <LanguageBar language={item} favCount={this.state.favCount[item]} lastVote={this.updateLastVoted} totalCount={this.incrementTotalFavCounter}/>)
+						this.languages.map( item => <LanguageBar language={item} favCounter={this.state.favCount[item]} lastVoted={this.updateLastVoted} totalCounter={this.incrementTotalFavCounter}/>)
 					}
 				</div>
 			</div>

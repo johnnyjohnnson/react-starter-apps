@@ -7,15 +7,15 @@ class LanguageBar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            favCount: props.favCount,
+            favCount: props.favCounter,
             language: props.language,
         }
     }
 
     upVote = (event) => {
         this.setState({favCount: this.state.favCount + 1});
-        this.props.lastVote(this.state.language);
-        this.props.totalCount();
+        this.props.lastVoted(this.state.language);
+        this.props.totalCounter();
     }
 
     render() {
